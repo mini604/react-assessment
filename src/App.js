@@ -19,6 +19,7 @@ import Count from './UseStateAndProps/Question1/Count';
 import Form from './UseStateAndProps/Question3/Form';
 import ParentComponent from './UseStateAndProps/ParentComponent/ParentComponent';
 import Toggle from './UseStateAndProps/Question5/Toggle';
+import TodoList from './Component/TodoList';
 
 
 const App = () => {
@@ -59,7 +60,7 @@ const App = () => {
 <Pagination data={data} itemsPerPage={2}/>
 */
 }
-<Toggle/>
+<TodoList/>
 </div>
   )
 }
