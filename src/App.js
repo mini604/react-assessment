@@ -22,16 +22,32 @@ import ParentComponent from './UseStateAndProps/ParentComponent/ParentComponent'
 import Toggle from './UseStateAndProps/Question5/Toggle';
 import TodoList from './Component/TodoList';
 import WeatherApp from './Component/WeatherApp';
-import Question1 from './UseStateHook/Question1';
+//import Question1 from './UseStateHook/Question1';
 import Userlist from './JavaScriptES6In React/Userlist';
-
-
+import Question1 from './UseStateAndUseReducer/Question1';
+import Question2 from './UseStateAndUseReducer/Question2';
+import Question3 from './UseStateAndUseReducer/Question3';
+import Question4 from './UseStateAndUseReducer/Question4';
+import Question5 from './UseStateAndUseReducer/Question5';
+import Question6 from './UseStateAndUseReducer/Question6';
+import Question7 from './UseStateAndUseReducer/Question7';
+import Question8 from './UseStateAndUseReducer/Question8';
+import Audio from './Audio/ChamCham.mp3';
+import Question9 from './UseStateAndUseReducer/Question9';
+import Question10 from './UseStateAndUseReducer/Question10';
 const App = () => {
 
+  
   const todos = [
     {id:1, task:'Complete Assignment'},
     {id:2, task:'Read a book'},
     {id:3, task:'Go For A walk'}
+  ];
+  const images = [
+    'https://www.kasandbox.org/programming-images/avatars/marcimus-red.png',
+    'https://www.kasandbox.org/programming-images/avatars/marcimus-purple.png',
+    'https://www.kasandbox.org/programming-images/avatars/marcimus-orange.png',
+    'https://www.kasandbox.org/programming-images/avatars/duskpin-ultimate.png'
   ];
   
   const city ="Ajmer";
@@ -89,8 +105,10 @@ const App = () => {
       </div>
     </div>
       */}
-      
-      <Userlist/>
+    
+    {/*<Question8 audioPath={Audio}/>*/}
+    <Question10/>
+
 </div>
   )
 }

@@ -25,7 +25,7 @@ const WeatherApp = () => {
       let response = await fetch(url);
       let data = await response.json();
       const humidity = document.getElementsByClassName("humidity-percent");
-    const wind = document.getElementsByClassName("")
+    const wind = document.getElementsByClassName("wind-rate")
 
   }
 
