@@ -1,3 +1,4 @@
+import React,{useEffect,useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SearchFilter from './10ReactNodeJSPractice/BuildSearchFilter/SearchFilter';
@@ -20,6 +21,9 @@ import Form from './UseStateAndProps/Question3/Form';
 import ParentComponent from './UseStateAndProps/ParentComponent/ParentComponent';
 import Toggle from './UseStateAndProps/Question5/Toggle';
 import TodoList from './Component/TodoList';
+import WeatherApp from './Component/WeatherApp';
+import Question1 from './UseStateHook/Question1';
+import Userlist from './JavaScriptES6In React/Userlist';
 
 
 const App = () => {
@@ -35,6 +39,17 @@ const App = () => {
 
   const data = ['item1','item2','item3','item4','item5','item6','item7'];
   
+
+  const [listTodo,setListTodo]=useState([]);
+  let addList = (inputText)=>{
+    if(inputText!=='')
+      setListTodo([...listTodo,inputText]);
+  }
+  const deleteListItem = (key)=>{
+    let newListTodo = [...listTodo];
+    newListTodo.splice(key,1)
+    setListTodo([...newListTodo])
+  }
 
   return (
     <div className="App">
@@ -60,7 +75,22 @@ const App = () => {
 <Pagination data={data} itemsPerPage={2}/>
 */
 }
-<TodoList/>
+{/*
+<div className="main-container">
+      <div className="center-container">
+        <TodoInput addList={addList}/>
+        <h1 className="app-heading">TODO</h1>
+        <hr/>
+        {listTodo.map((listItem,i)=>{
+          return (
+            <Todolist key={i} index={i} item={listItem} deleteItem={deleteListItem}/>
+          )
+        })}
+      </div>
+    </div>
+      */}
+      
+      <Userlist/>
 </div>
   )
 }
