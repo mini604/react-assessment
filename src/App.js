@@ -23,18 +23,28 @@ import Toggle from './UseStateAndProps/Question5/Toggle';
 import TodoList from './Component/TodoList';
 import WeatherApp from './Component/WeatherApp';
 //import Question1 from './UseStateHook/Question1';
-import Userlist from './JavaScriptES6In React/Userlist';
-import Question1 from './UseStateAndUseReducer/Question1';
-import Question2 from './UseStateAndUseReducer/Question2';
-import Question3 from './UseStateAndUseReducer/Question3';
-import Question4 from './UseStateAndUseReducer/Question4';
-import Question5 from './UseStateAndUseReducer/Question5';
-import Question6 from './UseStateAndUseReducer/Question6';
-import Question7 from './UseStateAndUseReducer/Question7';
-import Question8 from './UseStateAndUseReducer/Question8';
-import Audio from './Audio/ChamCham.mp3';
-import Question9 from './UseStateAndUseReducer/Question9';
-import Question10 from './UseStateAndUseReducer/Question10';
+//import Userlist from './JavaScriptES6In React/Userlist';
+//import Question1 from './UseStateAndUseReducer/Question1';
+//import Question2 from './UseStateAndUseReducer/Question2';
+//import Question3 from './UseStateAndUseReducer/Question3';
+//import Question4 from './UseStateAndUseReducer/Question4';
+//import Question5 from './UseStateAndUseReducer/Question5';
+//import Question6 from './UseStateAndUseReducer/Question6';
+//import Question7 from './UseStateAndUseReducer/Question7';
+//import Question8 from './UseStateAndUseReducer/Question8';
+//import Audio from './Audio/ChamCham.mp3';
+//import Question9 from './UseStateAndUseReducer/Question9';
+//import Question10 from './UseStateAndUseReducer/Question10';
+import UserApi from './JSEs6PraticeOneReactTASK/UserApi';
+import Question1 from './JavaScriptEs6/Question1';
+import Question2 from './JavaScriptEs6/Question2';
+import Question3 from './JavaScriptEs6/Question3';
+import Question4 from './JavaScriptEs6/Question4';
+import Qusetion5 from './JavaScriptEs6/Qusetion5';
+import Question6 from './JavaScriptEs6/Question6';
+import Question7 from './JavaScriptEs6/Question7';
+import Question8 from './JavaScriptEs6/Question8';
+import Question9 from './JavaScriptEs6/Question9';
 const App = () => {
 
   
@@ -107,8 +117,9 @@ const App = () => {
       */}
     
     {/*<Question8 audioPath={Audio}/>*/}
-    <Question10/>
+    <Question9/>
 
+   
 </div>
   )
 }
