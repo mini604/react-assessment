@@ -45,6 +45,9 @@ import Question6 from './JavaScriptEs6/Question6';
 import Question7 from './JavaScriptEs6/Question7';
 import Question8 from './JavaScriptEs6/Question8';
 import Question9 from './JavaScriptEs6/Question9';
+import { ADD_TASK } from './ReduxTaskManager/Action/Action';
+import TaskForm from './ReduxTaskManager/TaskForm/TaskForm';
+import Tasklist from './ReduxTaskManager/TaskList/Tasklist';
 const App = () => {
 
   
@@ -117,8 +120,9 @@ const App = () => {
       */}
     
     {/*<Question8 audioPath={Audio}/>*/}
-    <Question9/>
-
+    
+<TaskForm/>
+<Tasklist/>
    
 </div>
   )
